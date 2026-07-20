@@ -1,0 +1,43 @@
+# Ảnh/video test sinh ra
+assets/images/
+assets/videos/
+assets/mixed/
+
+# File do buildFileTool sinh ra
+genfile/upload/index/
+genfile/upload/upload/
+
+# Manifest sinh ra
+data/upload-manifest-image.json
+data/upload-manifest-video.json
+data/upload-manifest-mixed.json
+
+# Report k6 (giữ folder rỗng qua .gitkeep, chỉ ignore file report bên trong)
+reports/*
+!reports/.gitkeep
+!reports/Cloud/
+reports/Cloud/*
+!reports/Cloud/.gitkeep
+!reports/Cloud/upload-image/
+reports/Cloud/upload-image/*
+!reports/Cloud/upload-image/.gitkeep
+!reports/Cloud/upload-video/
+reports/Cloud/upload-video/*
+!reports/Cloud/upload-video/.gitkeep
+!reports/Cloud/upload-mixed/
+reports/Cloud/upload-mixed/*
+!reports/Cloud/upload-mixed/.gitkeep
+
+# Tool binary (không commit file .exe)
+genfile/upload/buildFileTool.exe
+genfile/upload/uploadTool.exe
+
+# Wallet key (nhạy cảm - tuyệt đối không commit)
+genfile/upload/conf/wallet.bin
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
